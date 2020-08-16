@@ -24,6 +24,7 @@
 		C4B6076F24E90F9F0065CCE5 /* GitHubReposModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6076E24E90F9F0065CCE5 /* GitHubReposModel.swift */; };
 		C4B6077124E91BBE0065CCE5 /* GitHubReposModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6077024E91BBE0065CCE5 /* GitHubReposModelTests.swift */; };
 		C4B6077924E937F00065CCE5 /* SearchRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6077824E937F00065CCE5 /* SearchRepositoriesViewModel.swift */; };
+		C4B6077D24E93A520065CCE5 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = C4B6077C24E93A520065CCE5 /* EntwineTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B6077D24E93A520065CCE5 /* EntwineTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +105,7 @@
 				C4B6074024E8F78E0065CCE5 /* SwiftUIAndCombineUnitTestsSampleTests */,
 				C4B6074B24E8F78E0065CCE5 /* SwiftUIAndCombineUnitTestsSampleUITests */,
 				C4B6072824E8F78C0065CCE5 /* Products */,
+				C4B6077B24E93A520065CCE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,6 +231,13 @@
 			path = SearchRepositories;
 			sourceTree = "<group>";
 		};
+		C4B6077B24E93A520065CCE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +275,9 @@
 				C4B6073F24E8F78E0065CCE5 /* PBXTargetDependency */,
 			);
 			name = SwiftUIAndCombineUnitTestsSampleTests;
+			packageProductDependencies = (
+				C4B6077C24E93A520065CCE5 /* EntwineTest */,
+			);
 			productName = SwiftUIAndCombineUnitTestsSampleTests;
 			productReference = C4B6073D24E8F78E0065CCE5 /* SwiftUIAndCombineUnitTestsSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -321,6 +334,7 @@
 			mainGroup = C4B6071E24E8F78C0065CCE5;
 			packageReferences = (
 				C4B6075B24E900CD0065CCE5 /* XCRemoteSwiftPackageReference "Moya" */,
+				C4B6077A24E93A210065CCE5 /* XCRemoteSwiftPackageReference "Entwine" */,
 			);
 			productRefGroup = C4B6072824E8F78C0065CCE5 /* Products */;
 			projectDirPath = "";
@@ -704,6 +718,14 @@
 				minimumVersion = 14.0.0;
 			};
 		};
+		C4B6077A24E93A210065CCE5 /* XCRemoteSwiftPackageReference "Entwine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tcldr/Entwine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -711,6 +733,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C4B6075B24E900CD0065CCE5 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		C4B6077C24E93A520065CCE5 /* EntwineTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4B6077A24E93A210065CCE5 /* XCRemoteSwiftPackageReference "Entwine" */;
+			productName = EntwineTest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Entwine",
+        "repositoryURL": "https://github.com/tcldr/Entwine",
+        "state": {
+          "branch": null,
+          "revision": "cd90cfb2510c35ba082d9c7a8910bdacc6fa840f",
+          "version": "0.9.1"
+        }
+      },
+      {
         "package": "Moya",
         "repositoryURL": "https://github.com/Moya/Moya",
         "state": {
