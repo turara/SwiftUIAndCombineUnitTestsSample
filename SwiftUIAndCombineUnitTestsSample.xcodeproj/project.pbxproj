@@ -21,6 +21,8 @@
 		C4B6076724E905840065CCE5 /* GitHubRepoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6076624E905840065CCE5 /* GitHubRepoItems.swift */; };
 		C4B6076924E906190065CCE5 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6076824E906190065CCE5 /* GitHub.swift */; };
 		C4B6076D24E908E10065CCE5 /* GitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6076C24E908E10065CCE5 /* GitHubTests.swift */; };
+		C4B6076F24E90F9F0065CCE5 /* GitHubReposModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6076E24E90F9F0065CCE5 /* GitHubReposModel.swift */; };
+		C4B6077124E91BBE0065CCE5 /* GitHubReposModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6077024E91BBE0065CCE5 /* GitHubReposModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		C4B6076624E905840065CCE5 /* GitHubRepoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoItems.swift; sourceTree = "<group>"; };
 		C4B6076824E906190065CCE5 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		C4B6076C24E908E10065CCE5 /* GitHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTests.swift; sourceTree = "<group>"; };
+		C4B6076E24E90F9F0065CCE5 /* GitHubReposModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReposModel.swift; sourceTree = "<group>"; };
+		C4B6077024E91BBE0065CCE5 /* GitHubReposModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReposModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B6076424E9054F0065CCE5 /* APIClient */,
+				C4B6076E24E90F9F0065CCE5 /* GitHubReposModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B6076B24E908B10065CCE5 /* APIClient */,
+				C4B6077024E91BBE0065CCE5 /* GitHubReposModelTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				C4B6076924E906190065CCE5 /* GitHub.swift in Sources */,
 				C4B6072F24E8F78C0065CCE5 /* ContentView.swift in Sources */,
 				C4B6076024E902D00065CCE5 /* GitHubRepo.swift in Sources */,
+				C4B6076F24E90F9F0065CCE5 /* GitHubReposModel.swift in Sources */,
 				C4B6076224E9036B0065CCE5 /* GitHubUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +363,7 @@
 			files = (
 				C4B6076D24E908E10065CCE5 /* GitHubTests.swift in Sources */,
 				C4B6074224E8F78E0065CCE5 /* SwiftUIAndCombineUnitTestsSampleTests.swift in Sources */,
+				C4B6077124E91BBE0065CCE5 /* GitHubReposModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
