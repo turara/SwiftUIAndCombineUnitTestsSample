@@ -37,7 +37,9 @@ class SearchRepositoriesViewModel {
     @Published private(set) var lastQuery: String?
     @Published private(set) var state: SearchRepositoriesViewModelState = .initial {
         didSet {
-            shouldShowErrorAlert =  oldValue != state && state == .error
+            if oldValue != state && state == .error && !shouldShowErrorAlert {
+                shouldShowErrorAlert = true
+            }
         }
     }
     @Published var shouldShowErrorAlert: Bool = false

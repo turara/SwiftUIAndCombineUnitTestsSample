@@ -27,3 +27,9 @@ struct GitHubRepo: Codable {
         case url
     }
 }
+
+extension GitHubRepo: Equatable {
+    static func == (lhs: GitHubRepo, rhs: GitHubRepo) -> Bool {
+        lhs.id == rhs.id
+    }
+}
