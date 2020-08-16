@@ -26,6 +26,7 @@
 		C4B6077924E937F00065CCE5 /* SearchRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6077824E937F00065CCE5 /* SearchRepositoriesViewModel.swift */; };
 		C4B6077D24E93A520065CCE5 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = C4B6077C24E93A520065CCE5 /* EntwineTest */; };
 		C4B6078124E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */; };
+		C4B6078624E9FCB30065CCE5 /* SearchRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		C4B6077024E91BBE0065CCE5 /* GitHubReposModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReposModelTests.swift; sourceTree = "<group>"; };
 		C4B6077824E937F00065CCE5 /* SearchRepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewModel.swift; sourceTree = "<group>"; };
 		C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewModelTests.swift; sourceTree = "<group>"; };
+		C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B6077824E937F00065CCE5 /* SearchRepositoriesViewModel.swift */,
+				C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */,
 			);
 			path = SearchRepositories;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				C4B6072D24E8F78C0065CCE5 /* SceneDelegate.swift in Sources */,
 				C4B6076724E905840065CCE5 /* GitHubRepoItems.swift in Sources */,
 				C4B6076924E906190065CCE5 /* GitHub.swift in Sources */,
+				C4B6078624E9FCB30065CCE5 /* SearchRepositoriesView.swift in Sources */,
 				C4B6077924E937F00065CCE5 /* SearchRepositoriesViewModel.swift in Sources */,
 				C4B6072F24E8F78C0065CCE5 /* ContentView.swift in Sources */,
 				C4B6076024E902D00065CCE5 /* GitHubRepo.swift in Sources */,

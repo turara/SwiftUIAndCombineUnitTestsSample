@@ -49,3 +49,12 @@ extension GitHubReposModel: GitHubReposModelProtocol {
         }
     }
 }
+
+#if DEBUG
+extension GitHubReposModel {
+    // For previews
+    static func makeModelWithStub() -> GitHubReposModel {
+        .init(apiClient: .init(stubClosure: MoyaProvider.immediatelyStub))
+    }
+}
+#endif
