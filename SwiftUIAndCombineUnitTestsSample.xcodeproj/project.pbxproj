@@ -30,6 +30,7 @@
 		C4B6078924E9FFE60065CCE5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078824E9FFE60065CCE5 /* SearchBar.swift */; };
 		C4B6078B24EA01940065CCE5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */; };
 		C4B6078E24EA03290065CCE5 /* RepositoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078D24EA03290065CCE5 /* RepositoryRow.swift */; };
+		C4B6079124EA33550065CCE5 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C4B6079024EA33550065CCE5 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B6079124EA33550065CCE5 /* KingfisherSwiftUI in Frameworks */,
 				C4B6075D24E900CD0065CCE5 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +305,7 @@
 			name = SwiftUIAndCombineUnitTestsSample;
 			packageProductDependencies = (
 				C4B6075C24E900CD0065CCE5 /* Moya */,
+				C4B6079024EA33550065CCE5 /* KingfisherSwiftUI */,
 			);
 			productName = SwiftUIAndCombineUnitTestsSample;
 			productReference = C4B6072724E8F78C0065CCE5 /* SwiftUIAndCombineUnitTestsSample.app */;
@@ -382,6 +385,7 @@
 			packageReferences = (
 				C4B6075B24E900CD0065CCE5 /* XCRemoteSwiftPackageReference "Moya" */,
 				C4B6077A24E93A210065CCE5 /* XCRemoteSwiftPackageReference "Entwine" */,
+				C4B6078F24EA33550065CCE5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C4B6072824E8F78C0065CCE5 /* Products */;
 			projectDirPath = "";
@@ -778,6 +782,14 @@
 				minimumVersion = 0.9.1;
 			};
 		};
+		C4B6078F24EA33550065CCE5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -790,6 +802,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C4B6077A24E93A210065CCE5 /* XCRemoteSwiftPackageReference "Entwine" */;
 			productName = EntwineTest;
+		};
+		C4B6079024EA33550065CCE5 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4B6078F24EA33550065CCE5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

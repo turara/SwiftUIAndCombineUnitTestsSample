@@ -12,6 +12,12 @@ Network abstraction layer for API
 
 https://github.com/Moya/Moya
 
+#### KingFisher
+
+For downloading and caching images from the web
+
+https://github.com/onevcat/Kingfisher
+
 #### Entwine
 
 For Unit testing with Combine framework
