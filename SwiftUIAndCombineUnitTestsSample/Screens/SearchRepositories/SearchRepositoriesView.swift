@@ -37,9 +37,7 @@ struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: V
                 
             }
             if isLoading && isListEmpty {
-                // TODO: Show indicator
-                Text("Now searching")
-                    .edgesIgnoringSafeArea(.all)
+                ActivityIndicatorWithRectangle().edgesIgnoringSafeArea(.all)
             }
         }
         .navigationBarTitle("Search Repositories", displayMode: .inline)
@@ -65,8 +63,7 @@ struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: V
             self.viewModel.send(event: .didPushSearchMore)
         }) {
             if self.isLoading {
-                // TODO: Show indicator
-                Text("Now searching...")
+                ActivityIndicator()
                     .frame(maxWidth: .infinity, alignment: .center)
             } else {
                 (Text("Search More ") +

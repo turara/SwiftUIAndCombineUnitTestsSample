@@ -28,6 +28,7 @@
 		C4B6078124E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */; };
 		C4B6078624E9FCB30065CCE5 /* SearchRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */; };
 		C4B6078924E9FFE60065CCE5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078824E9FFE60065CCE5 /* SearchBar.swift */; };
+		C4B6078B24EA01940065CCE5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewModelTests.swift; sourceTree = "<group>"; };
 		C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesView.swift; sourceTree = "<group>"; };
 		C4B6078824E9FFE60065CCE5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B6078824E9FFE60065CCE5 /* SearchBar.swift */,
+				C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */,
 			);
 			path = SupportingViews;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				C4B6072D24E8F78C0065CCE5 /* SceneDelegate.swift in Sources */,
 				C4B6076724E905840065CCE5 /* GitHubRepoItems.swift in Sources */,
 				C4B6076924E906190065CCE5 /* GitHub.swift in Sources */,
+				C4B6078B24EA01940065CCE5 /* ActivityIndicator.swift in Sources */,
 				C4B6078624E9FCB30065CCE5 /* SearchRepositoriesView.swift in Sources */,
 				C4B6077924E937F00065CCE5 /* SearchRepositoriesViewModel.swift in Sources */,
 				C4B6072F24E8F78C0065CCE5 /* ContentView.swift in Sources */,
