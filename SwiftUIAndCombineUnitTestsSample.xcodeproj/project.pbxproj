@@ -272,8 +272,8 @@
 		C4B6077F24E93B050065CCE5 /* SearchRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */,
 				C4B6079824EAAF5C0065CCE5 /* SearchRepositoriesViewTests.swift */,
+				C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */,
 			);
 			path = SearchRepositories;
 			sourceTree = "<group>";
@@ -281,8 +281,8 @@
 		C4B6078724E9FFC30065CCE5 /* SupportingViews */ = {
 			isa = PBXGroup;
 			children = (
-				C4B6078824E9FFE60065CCE5 /* SearchBar.swift */,
 				C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */,
+				C4B6078824E9FFE60065CCE5 /* SearchBar.swift */,
 			);
 			path = SupportingViews;
 			sourceTree = "<group>";

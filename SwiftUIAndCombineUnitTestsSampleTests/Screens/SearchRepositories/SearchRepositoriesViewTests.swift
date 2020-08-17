@@ -145,10 +145,7 @@ private class SearchRepositoriesViewModelStub: SearchRepositoriesViewModelProtoc
             fullName: "Repository \(id)",
             language: "Swift",
             stargazersCount: 100,
-            owner: GitHubUser(
-                id: id,
-                avatarURL: URL(string: "https://example.com")!
-            ),
+            owner: .init(id: id, avatarURL: URL(string: "https://example.com")!),
             url: URL(string: "https://example.com")!
         )
     }

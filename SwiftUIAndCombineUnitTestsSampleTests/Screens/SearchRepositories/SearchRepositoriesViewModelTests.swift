@@ -464,7 +464,15 @@ private extension SearchRepositoriesViewModelTests {
         totalCount: Int
     ) -> GitHubRepoItems<GitHubRepo> {
         let items = (0 ..< count).map { i in
-            GitHubRepo(id: i, description: "", fullName: "Project \(i)", language: nil, stargazersCount: i, owner: .init(id: i, avatarURL: URL(string: "https://example.com")!), url: URL(string: "https://example.com")!)
+            GitHubRepo(
+                id: i,
+                description: "",
+                fullName: "Project \(i)",
+                language: nil,
+                stargazersCount: i,
+                owner: .init(id: i, avatarURL: URL(string: "https://example.com")!),
+                url: URL(string: "https://example.com")!
+            )
         }
         return .init(incompleteResults: false, items: items, totalCount: totalCount)
     }
