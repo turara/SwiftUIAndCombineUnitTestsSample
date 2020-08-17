@@ -10,7 +10,6 @@ import Combine
 import SwiftUI
 
 struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: View {
-    
     @ObservedObject private var viewModel: ViewModel
 
     init(viewModel: ViewModel) {
@@ -20,8 +19,9 @@ struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: V
     var body: some View {
         ZStack {
             VStack {
-                // TODO: Show search bar
-                Text("Search bar here")
+                SearchBar(placeholder: "Input search query") { query in
+                    self.viewModel.send(event: .didSearchButtonClicked(query: query))
+                }
                 List {
                     ForEach(viewModel.repositoryList, id: \.id) { repository in
                         // TODO: Show cell

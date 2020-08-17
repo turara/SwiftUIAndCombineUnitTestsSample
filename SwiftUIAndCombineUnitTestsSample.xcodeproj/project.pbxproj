@@ -27,6 +27,7 @@
 		C4B6077D24E93A520065CCE5 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = C4B6077C24E93A520065CCE5 /* EntwineTest */; };
 		C4B6078124E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */; };
 		C4B6078624E9FCB30065CCE5 /* SearchRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */; };
+		C4B6078924E9FFE60065CCE5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078824E9FFE60065CCE5 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		C4B6077824E937F00065CCE5 /* SearchRepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewModel.swift; sourceTree = "<group>"; };
 		C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewModelTests.swift; sourceTree = "<group>"; };
 		C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesView.swift; sourceTree = "<group>"; };
+		C4B6078824E9FFE60065CCE5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				C4B6076324E904690065CCE5 /* Models */,
 				C4B6075E24E902AF0065CCE5 /* Entities */,
 				C4B6077224E935190065CCE5 /* Screens */,
+				C4B6078724E9FFC30065CCE5 /* SupportingViews */,
 				C4B6072A24E8F78C0065CCE5 /* AppDelegate.swift */,
 				C4B6072C24E8F78C0065CCE5 /* SceneDelegate.swift */,
 				C4B6072E24E8F78C0065CCE5 /* ContentView.swift */,
@@ -258,6 +261,14 @@
 				C4B6078024E93B1A0065CCE5 /* SearchRepositoriesViewModelTests.swift */,
 			);
 			path = SearchRepositories;
+			sourceTree = "<group>";
+		};
+		C4B6078724E9FFC30065CCE5 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4B6078824E9FFE60065CCE5 /* SearchBar.swift */,
+			);
+			path = SupportingViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +421,7 @@
 				C4B6072F24E8F78C0065CCE5 /* ContentView.swift in Sources */,
 				C4B6076024E902D00065CCE5 /* GitHubRepo.swift in Sources */,
 				C4B6076F24E90F9F0065CCE5 /* GitHubReposModel.swift in Sources */,
+				C4B6078924E9FFE60065CCE5 /* SearchBar.swift in Sources */,
 				C4B6076224E9036B0065CCE5 /* GitHubUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
