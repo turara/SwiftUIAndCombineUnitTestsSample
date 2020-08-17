@@ -6,11 +6,21 @@
 //  Copyright © 2020 Turara. All rights reserved.
 //
 
+import Moya
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            makeSearchRepositoriesView()
+        }.navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    private func makeSearchRepositoriesView() -> some View {
+        let apiClient = MoyaProvider<GitHub>()
+        let model = GitHubReposModel(apiClient: apiClient)
+        let viewModel = SearchRepositoriesViewModel(model: model)
+        return SearchRepositoriesView(viewModel: viewModel)
     }
 }
 
