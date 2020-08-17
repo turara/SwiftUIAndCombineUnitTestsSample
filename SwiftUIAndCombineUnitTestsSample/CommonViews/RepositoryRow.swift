@@ -6,6 +6,7 @@
 //  Copyright © 2020 Turara. All rights reserved.
 //
 
+import KingfisherSwiftUI
 import SwiftUI
 
 struct RepositoryRow: View {
@@ -26,8 +27,18 @@ struct RepositoryRow: View {
 
 private extension RepositoryRow {
     var avatar: some View {
-        // TODO: Show avatar image
-        Text("Avatar")
+        KFImage(self.repository.owner.avatarURL)
+        .placeholder({
+            Image(systemName: "person.fill")
+                .foregroundColor(Color.gray)
+                .scaleEffect(2.5)
+        })
+        .resizable()
+        .scaledToFit()
+        .frame(width: 60, height: 60, alignment: .center)
+        .clipShape(Circle())
+        .overlay(Circle().stroke(Color.white, lineWidth: 2))
+        .shadow(radius: 1)
     }
     
     var description: some View {
