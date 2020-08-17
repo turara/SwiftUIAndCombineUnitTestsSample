@@ -20,9 +20,15 @@ https://github.com/onevcat/Kingfisher
 
 #### Entwine
 
-For Unit testing with Combine framework
+For unit testing with Combine framework
 
 https://github.com/tcldr/Entwine
+
+#### ViewInspector
+
+For unit testing of SwiftUI views
+
+https://github.com/nalexn/ViewInspector
 
 ## Git Commit
 
