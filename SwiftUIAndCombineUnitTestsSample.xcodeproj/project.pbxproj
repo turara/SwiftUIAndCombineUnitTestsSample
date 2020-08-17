@@ -29,6 +29,7 @@
 		C4B6078624E9FCB30065CCE5 /* SearchRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */; };
 		C4B6078924E9FFE60065CCE5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078824E9FFE60065CCE5 /* SearchBar.swift */; };
 		C4B6078B24EA01940065CCE5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */; };
+		C4B6078E24EA03290065CCE5 /* RepositoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6078D24EA03290065CCE5 /* RepositoryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		C4B6078524E9FCB20065CCE5 /* SearchRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesView.swift; sourceTree = "<group>"; };
 		C4B6078824E9FFE60065CCE5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		C4B6078D24EA03290065CCE5 /* RepositoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +132,9 @@
 		C4B6072924E8F78C0065CCE5 /* SwiftUIAndCombineUnitTestsSample */ = {
 			isa = PBXGroup;
 			children = (
-				C4B6076324E904690065CCE5 /* Models */,
+				C4B6078C24EA03080065CCE5 /* CommonViews */,
 				C4B6075E24E902AF0065CCE5 /* Entities */,
+				C4B6076324E904690065CCE5 /* Models */,
 				C4B6077224E935190065CCE5 /* Screens */,
 				C4B6078724E9FFC30065CCE5 /* SupportingViews */,
 				C4B6072A24E8F78C0065CCE5 /* AppDelegate.swift */,
@@ -272,6 +275,14 @@
 				C4B6078A24EA01940065CCE5 /* ActivityIndicator.swift */,
 			);
 			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		C4B6078C24EA03080065CCE5 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4B6078D24EA03290065CCE5 /* RepositoryRow.swift */,
+			);
+			path = CommonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B6078E24EA03290065CCE5 /* RepositoryRow.swift in Sources */,
 				C4B6072B24E8F78C0065CCE5 /* AppDelegate.swift in Sources */,
 				C4B6072D24E8F78C0065CCE5 /* SceneDelegate.swift in Sources */,
 				C4B6076724E905840065CCE5 /* GitHubRepoItems.swift in Sources */,

@@ -24,8 +24,8 @@ struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: V
                 }
                 List {
                     ForEach(viewModel.repositoryList, id: \.id) { repository in
-                        // TODO: Show cell
-                        Text(repository.fullName)
+                        // TODO: Implement tapFavoriteButton
+                        RepositoryRow(repository: repository, isFavorite: false, tapFavoriteButton: {})
                     }
                     
                     if self.isReady && self.isListEmpty {
