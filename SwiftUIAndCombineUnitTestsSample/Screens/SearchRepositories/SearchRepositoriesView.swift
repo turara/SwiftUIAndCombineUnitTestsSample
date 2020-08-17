@@ -11,6 +11,9 @@ import SwiftUI
 
 struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: View {
     @ObservedObject private var viewModel: ViewModel
+    
+    // TODO: Move favorites state to ViewModel
+    @State private var favorites: [Int: Bool] = [:]
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -24,8 +27,13 @@ struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: V
                 }
                 List {
                     ForEach(viewModel.repositoryList, id: \.id) { repository in
-                        // TODO: Implement tapFavoriteButton
-                        RepositoryRow(repository: repository, isFavorite: false, tapFavoriteButton: {})
+                        RepositoryRow(
+                            repository: repository,
+                            isFavorite: self.favorites[repository.id] ?? false
+                        ) {
+                            let isFavorite = self.favorites[repository.id] ?? false
+                            self.favorites[repository.id] = !isFavorite
+                        }
                     }
                     
                     if self.isReady && self.isListEmpty {
