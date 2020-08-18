@@ -7,6 +7,7 @@
 //
 
 import Combine
+import KeyboardObserving
 import SwiftUI
 
 struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: View {
@@ -48,6 +49,7 @@ struct SearchRepositoriesView<ViewModel: SearchRepositoriesViewModelProtocol>: V
                 ActivityIndicatorWithRectangle().edgesIgnoringSafeArea(.all)
             }
         }
+        .keyboardObserving()
         .navigationBarTitle("Search Repositories", displayMode: .inline)
         .alert(isPresented: $viewModel.shouldShowErrorAlert) { errorAlert }
     }
