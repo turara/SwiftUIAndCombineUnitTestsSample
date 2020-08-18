@@ -18,6 +18,12 @@ For downloading and caching images from the web
 
 https://github.com/onevcat/Kingfisher
 
+#### KeyboardObserving
+
+Keyboard notifications in SwiftUI
+
+https://github.com/nickffox/KeyboardObserving
+
 #### Entwine
 
 For unit testing with Combine framework

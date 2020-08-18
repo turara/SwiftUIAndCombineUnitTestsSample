@@ -34,6 +34,7 @@
 		C4B6079724EAAE960065CCE5 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = C4B6079624EAAE960065CCE5 /* ViewInspector */; };
 		C4B6079924EAAF5C0065CCE5 /* SearchRepositoriesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6079824EAAF5C0065CCE5 /* SearchRepositoriesViewTests.swift */; };
 		C4B6079C24EAB0900065CCE5 /* SupportingViews+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6079B24EAB0900065CCE5 /* SupportingViews+Inspectable.swift */; };
+		C4B6079F24EBE6B60065CCE5 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = C4B6079E24EBE6B60065CCE5 /* KeyboardObserving */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 			files = (
 				C4B6079124EA33550065CCE5 /* KingfisherSwiftUI in Frameworks */,
 				C4B6075D24E900CD0065CCE5 /* Moya in Frameworks */,
+				C4B6079F24EBE6B60065CCE5 /* KeyboardObserving in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +324,7 @@
 			packageProductDependencies = (
 				C4B6075C24E900CD0065CCE5 /* Moya */,
 				C4B6079024EA33550065CCE5 /* KingfisherSwiftUI */,
+				C4B6079E24EBE6B60065CCE5 /* KeyboardObserving */,
 			);
 			productName = SwiftUIAndCombineUnitTestsSample;
 			productReference = C4B6072724E8F78C0065CCE5 /* SwiftUIAndCombineUnitTestsSample.app */;
@@ -404,6 +407,7 @@
 				C4B6077A24E93A210065CCE5 /* XCRemoteSwiftPackageReference "Entwine" */,
 				C4B6078F24EA33550065CCE5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				C4B6079524EAAE960065CCE5 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				C4B6079D24EBE6B60065CCE5 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
 			);
 			productRefGroup = C4B6072824E8F78C0065CCE5 /* Products */;
 			projectDirPath = "";
@@ -818,6 +822,14 @@
 				minimumVersion = 0.4.4;
 			};
 		};
+		C4B6079D24EBE6B60065CCE5 /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nickffox/KeyboardObserving";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -840,6 +852,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C4B6079524EAAE960065CCE5 /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
+		};
+		C4B6079E24EBE6B60065CCE5 /* KeyboardObserving */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4B6079D24EBE6B60065CCE5 /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
+			productName = KeyboardObserving;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
