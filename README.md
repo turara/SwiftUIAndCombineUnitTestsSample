@@ -2,6 +2,8 @@
 
 Sample project for unit testing with SwiftUI and Combine.
 
+Commentary article (Japanese): https://qiita.com/turara/items/dd7bee391962f945256f
+
 ## Dependencies
 
 ### With Swift Package Manager
