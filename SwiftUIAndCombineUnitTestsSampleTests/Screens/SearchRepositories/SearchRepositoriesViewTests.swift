@@ -77,12 +77,13 @@ class SearchRepositoriesViewTests: XCTestCase {
     }
     
     func test_searchMoreButtonExists_whenMoreSearchResultsExist() throws {
+        stubViewModel.lastQuery = "Swift"
         stubViewModel.state = .ready
         stubViewModel.repositoryList.append(contentsOf: stubViewModel.makeRepositories(count: 5))
         stubViewModel.moreSearchResultsExist = true
         
         let button = try view!.inspect().zStack().vStack(0).list(1).button(1)
-        XCTAssertEqual(try button.text().string(), "Search More ")
+        XCTAssertEqual(try button.text().string(), "Search More Swift")
     }
     
     func test_searchMoreButtonSendDidPushSearchMoreEvent_whenPushed() throws {
